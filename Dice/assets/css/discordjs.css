@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:300,400,500,600,700|Material+Icons');
+
+* {
+	outline: none !important;
+}
+
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/whitney.ttf');
+}
+
+html, body {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	background: #FFF; /* #2A2D32 */
+	font-family: 'Whitney', 'Encode Sans Semi Condensed';
+	font-weight: 500;
+	color: #2A2D32;
+}
+.container {
+	width: 100%;
+	max-width: 1000px;
+}
+._header {
+	background: url(https://streamkit.discordapp.com/overlay/29d5ff462afb11bce1979cf694aee3d1.png) #FFF;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+	border-bottom: 3px solid #F3F3F3;
+}
+._header .card {
+	background: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.65));
+	width: 100%;
+}
+._header .avatar {
+	border-radius: 100%;
+	width: 100%;
+	border: 8px solid white;
+	margin-top: 20px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+._header .username {
+	color: #4f545c;
+	font-size: 1.5vw;
+	margin: 0;
+	margin-top: 70px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+@media screen and (max-width: 768px) {
+	._header .username {
+		font-size: 25px;
+		margin-top: 70px;
+	}
+}
+._header .discriminator {
+	color: #DDD;
+}
+
+/* Tabs */
+.nav-tabs {
+	border: 0;
+}
+.nav-tabs > li > a {
+	background: transparent !important;
+	font-family: 'Encode Sans Semi Condensed';
+	border: 0;
+	font-size: 16px;
+	font-weight: 500;
+	color: #AAA;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: 0;
+	border-bottom: 2px solid #738BD7;
+	color: #738BD7;
+}
+
+
+.guild-item {
+	position: relative;
+}
+.guild-item > span.connectivity {
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	color: lime;
+}
+.guild-item > button.connectivity {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+/* Guild List */
+
+.guildList {
+	list-style: none;
+	padding: 0;
+}
+.guildList > li {
+	background: #2A2D32;
+	height: 60px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	transition: 0.5s;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	color: #FFF;
+}
+.guildList > li:hover {
+	opacity: 0.9;
+	transform: scale(1.02);
+	cursor: pointer;
+}
+.guildList > li > .guild-name {
+
+}
+.guildList > li > .guild-badge {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+/* Chatlogs */
+.page-header {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 25px;
+	color: #738BD7;
+}
+.chatlogs {
+	list-style: none;
+	padding: 0;
+}
+.chatlogs > .message {
+	padding: 10px;
+	border-top: 1px solid #E9E9E9;
+	position: relative;
+	transition: 0.5s;
+}
+.chatlogs > .message:hover {
+	transform: scale(1.05);
+	cursor: default;
+}
+.chatlogs > .message:first-child {
+	border-top: 0;
+}
+.chatlogs > .message > span.msg-date {
+	color: #AAA;
+	margin-right: 10px;
+	font-size: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+.chatlogs > .message > a.msg-user {
+	margin-right: 6px;
+	font-size: 14px;
+	color: #738BD7;
+	font-weight: 600;
+}
+.chatlogs > .message > span.msg-content {
+	color: #aaa;
+}
+.chatlogs > .message > span.msg-deleted {
+	position: absolute;
+	right: 0;
+	color: #E74C3C;
+	font-weight: 600;
+	font-size: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+
+/* Discord popover card */
+.popover {
+	border: 0;
+	min-width: 300px;
+	overflow: hidden;
+	border-radius: 8px;
+	min-height: 200px;
+}
+.popover-content { padding: 0; }
+.discord-card {
+	margin: 0;
+	min-width: 300px;
+}
+.discord-card > .card-content {
+	padding: 10px;
+}
+.discord-card > .card-header {
+	background: #333;
+	text-align: center;
+	padding: 20px;
+}
+.discord-card > .card-header > .card-av {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 5px solid white;
+}
+.discord-card > .card-header > h3 {
+	color: white;
+	font-size: 20px;
+	font-family: 'Whitney';
+}

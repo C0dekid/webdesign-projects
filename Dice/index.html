@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl" ng-app="HabboForums">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Test</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/discordjs.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="userprofile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">ABC</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="test" id="myPopoverContent" style="display: none;">
+	<div class="discord-card">
+		<div class="card-header">
+			<img src="https://cdn.discordapp.com/app-icons/753730571603017731/1065459ead635147323b17b77eed5471.png?size=256" class="card-av" />
+			<h3>Dice<small>#1863</small></h3>
+		</div>
+		<div class="card-content">hello</div>
+	</div>
+</div>
+
+
+<section class="_header">
+	<div class="card">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-xs-3 abc">
+				<img src="https://cdn.discordapp.com/app-icons/753730571603017731/1065459ead635147323b17b77eed5471.png?size=256" class="avatar" />
+			</div>
+			<div class="col-md-8 col-xs-9"><h1 class="username">Dice<small class="discriminator">#1863</small></h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#servers" aria-controls="servers" role="tab" data-toggle="tab">My Servers</a></li>
+					<li role="presentation"><a href="#chatlogs" aria-controls="chatlogs" role="tab" data-toggle="tab">Mutes</a></li>
+					<li role="presentation"><a href="#staff" aria-controls="staff" role="tab" data-toggle="tab">Bans</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<section class="container">
+	<div class="row">
+		<div class="col-md-12 col-xs-12 col-lg-12">
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="servers">
+					<h1 class="page-header">Servers you own or have administrator rights</h1>
+					<ul class="guildList">
+						<li class="guild-item">
+							<img src="assets/c_images/discord-icon.png" class="guild-badge" />
+							<h4 class="guild-name">discord_web_server</h4>
+							<span class="connectivity">Joined!</span>
+							<button class="btn btn-success connectivity">Settings</button>
+						</li>
+						<li class="guild-item">
+							<img src="assets/c_images/discord-icon.png" class="guild-badge" />
+							<h4 class="guild-name">discord_web_server</h4>
+							<button class="btn btn-primary connectivity">Add</button>
+						</li>
+						<li class="guild-item">
+							<img src="assets/c_images/discord-icon.png" class="guild-badge" />
+							<h4 class="guild-name">discord_web_server</h4>
+							<button class="btn btn-primary connectivity">Add</button>
+						</li>
+						<li class="guild-item">
+							<img src="assets/c_images/discord-icon.png" class="guild-badge" />
+							<h4 class="guild-name">discord_web_server</h4>
+							<button class="btn btn-primary connectivity">Add</button>
+						</li>
+						<li class="guild-item">
+							<img src="assets/c_images/discord-icon.png" class="guild-badge" />
+							<h4 class="guild-name">discord_web_server</h4>
+							<button class="btn btn-primary connectivity">Add</button>
+						</li>
+					</ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="chatlogs">
+					<h1 class="page-header">Mutes <small>All mutes set by Dice.</small></h1>
+					
+					<ul class="chatlogs">
+						<li class="message"><span class="msg-deleted">User left</span><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" data-toggle="popover" data-content="" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-deleted">User left</span><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-deleted">User left</span><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-deleted">User left</span><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+						<li class="message"><span class="msg-date">10:42 PM</span> <a href="javascript:void(0);" class="msg-user">Nickname12</a> <span class="msg-content">Lorem ipsum dolor sit amet to some HTML and CSS.</span></li>
+					</ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="staff">
+					<h1 class="page-header">Administration</h1>
+				Secret staff stuff</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('[data-toggle="popover"]').popover({ 
+       title : null,
+       html : true,
+       placement: "top",
+       content: $('#myPopoverContent').html()
+   });
+});
+</script>
+</body>
+</html>
