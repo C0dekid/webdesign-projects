@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Dashboard Template for Bootstrap</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/layout.css" rel="stylesheet">
+</head>
+<body>
+<div class="modal fade" tabindex="-1" role="dialog" id="_SignInPopup">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>Enter your e-mail and password to continue.</p>
+
+				<div class="form-group">
+					<label>E-mail address</label>
+					<input type="text" class="form-control input-sm" placeholder="example@user.com" />
+				</div>
+
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control input-sm" placeholder="Password" />
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary">Sign in</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="_SignUpPopup">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Create an account</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Modal body text goes here.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Save changes</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="jumbotron">
+	<div class="container">
+		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-0 mb-3">
+			<h5 class="my-0 mr-md-auto font-weight-normal">Cord.ly - Get paid with invite links</h5>
+			<nav class="my-2 my-md-0 mr-md-3">
+				<a class="p-2 text-dark" href="#">Features</a>
+				<a class="p-2 text-dark" href="#">Support</a>
+				<a class="p-2 text-dark" href="#">Pricing</a>
+				<a class="p-2 text-dark" href="javascript:void(0);"data-toggle="modal" data-toggle="modal" data-target="#_SignInPopup">Sign in</a>
+			</nav>
+			<button class="btn btn-primary hdr" data-toggle="modal" data-target="#_SignUpPopup"><b>Get started</b></button>
+		</div>
+	</div>
+</section>
+<main class="container">
+	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h1>Get paid with your discord invite links</h1>
+		<p class="lead">Get paid everytime an user clicks on your link and joins your server!</p>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img src="assets/c_images/icons/touch_t.png" class="feature-image" />
+				<h4 class="feature-title">1. <b>Create</b> an invite</h4>
+			</div>
+			<div class="col-md-4">
+				<img src="assets/c_images/icons/share_t.png" class="feature-image" />
+				<h4 class="feature-title">2. <b>Share</b> your link</h4>
+			</div>
+			<div class="col-md-4">
+				<img src="assets/c_images/icons/money_t.png" class="feature-image" />
+				<h4 class="feature-title">3. Get <b>money</b></h4>
+			</div>
+		</div>
+
+		<p><button class="btn btn-primary hdr sign-up-btn btn-lg" href="#">Get started <b>today</b> <span class="btn-icon" data-feather="arrow-right-circle"></span></button></p>
+	</div>
+	<div class="card-deck mb-3 text-center hide">
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+			<h4 class="my-0 font-weight-normal">Pro</h4>
+			</div>
+			<div class="card-body">
+			<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+			<ul class="list-unstyled mt-3 mb-4">
+				<li>20 users included</li>
+				<li>10 GB of storage</li>
+				<li>Priority email support</li>
+				<li>Help center access</li>
+			</ul>
+			<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+			</div>
+		</div>
+	</div>
+
+</main>
+<footer>
+	<div class="container">
+	<div class="row">
+		<div class="col-12 col-md">
+			&copy; 2018 - Cord.ly - All Rights Reserved.<br />
+			<a href="#">Cord.ly</a> is not affiliated, a partner or an official platform from Discord Inc.
+		</div>
+	</div>
+	</div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap/popper.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+	feather.replace();
+});
+</script>
+</body>
+</html>
