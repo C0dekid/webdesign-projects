@@ -1,0 +1,1 @@
+Dice is a multipurpose Discord Bot written in Node.js using the Discord.js framework. The plan was to make a web interface for this bot so users (and me) could manage the bot's settings. However the size of the project became to big to complete it all by myself.
